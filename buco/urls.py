@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', include('landinpage.urls', namespace='landinpage')),
+    path('', include('landinpage.urls', namespace='landinpage')),
 ]
 
 if settings.DEBUG:
